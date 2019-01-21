@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat May 05 08:14:53 2018
+# Process ID: 8952
+# Current directory: C:/Users/Bohar Anamaria/Desktop/semestrul2/AC/Laboratoare/test_env
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8480 C:\Users\Bohar Anamaria\Desktop\semestrul2\AC\Laboratoare\test_env\test_env.xpr
+# Log file: C:/Users/Bohar Anamaria/Desktop/semestrul2/AC/Laboratoare/test_env/vivado.log
+# Journal file: C:/Users/Bohar Anamaria/Desktop/semestrul2/AC/Laboratoare/test_env\vivado.jou
+#-----------------------------------------------------------
+sstart_guiopen_project {C:/Users/Bohar Anamaria/Desktop/semestrul2/AC/Laboratoare/test_env/test_env.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+oopen_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 740.691 ; gain = 92.559
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat May 05 08:15:37 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Bohar Anamaria/Desktop/semestrul2/AC/Laboratoare/test_env/test_env.runs/synth_1/runme.log
+[Sat May 05 08:15:37 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Bohar Anamaria/Desktop/semestrul2/AC/Laboratoare/test_env/test_env.runs/impl_1/runme.log
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183A38A0DA]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183A38A0DA]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A38A0DA
+set_property PROGRAM.FILE {C:/Users/Bohar Anamaria/Desktop/semestrul2/AC/Laboratoare/test_env/test_env.runs/impl_1/test_env.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Bohar Anamaria/Desktop/semestrul2/AC/Laboratoare/test_env/test_env.runs/impl_1/test_env.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 05 09:59:24 2018...

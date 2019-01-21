@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun May 06 20:26:43 2018
+# Process ID: 604
+# Current directory: C:/Users/Bohar Anamaria/Desktop/semestrul2/AC/Laboratoare/test_env
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10496 C:\Users\Bohar Anamaria\Desktop\semestrul2\AC\Laboratoare\test_env\test_env.xpr
+# Log file: C:/Users/Bohar Anamaria/Desktop/semestrul2/AC/Laboratoare/test_env/vivado.log
+# Journal file: C:/Users/Bohar Anamaria/Desktop/semestrul2/AC/Laboratoare/test_env\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Bohar Anamaria/Desktop/semestrul2/AC/Laboratoare/test_env/test_env.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 763.438 ; gain = 125.930
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 06 21:27:40 2018...
